@@ -20,6 +20,8 @@
 
  footer {
      text-align: center;
+     color: white;
+     background-color: black
  }
 
  .addBlock {
@@ -54,7 +56,20 @@
      background-image: url('./assets/raphael-schaller-zbUvPw1wUIw-unsplash\ 2.jpg');
  }
 
+ .Locations {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
 
+ .locationImage {
+     height: 400px;
+     width: 400px;
+ }
+
+ .locationDiv {
+     margin: 4% 4%;
+ }
 
 
 
