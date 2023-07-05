@@ -45,6 +45,14 @@
  }
 
 
+ .indexLocation {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     height: 50%;
+     background-image: url('./assets/raphael-schaller-zbUvPw1wUIw-unsplash\ 2.jpg');
+ }
 
 
 
@@ -54,7 +62,7 @@
  #menu {
      background: #000000;
      color: #FFF;
-     height: 45px;
+     height: 5%;
      padding-left: 18px;
 
  }
