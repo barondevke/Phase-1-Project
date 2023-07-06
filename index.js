@@ -79,9 +79,10 @@ function addVote(id, element) {
 
 }
 
-
-document.addEventListener('submit', () => {
+const form = document.querySelector('form')
+form.addEventListener('submit', (e) => {
     addLocation()
+
 
 
 })
@@ -90,22 +91,21 @@ function addLocation() {
     let name = document.getElementById('name')
     let place = document.getElementById('place')
     let image = document.getElementById('image')
+
+    let data = {
+        "name": name.value,
+        "image": image.value,
+        'votes': 0
+    }
     fetch('http://localhost:3000/locations', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
             Accept: 'application/json'
         },
-        body: JSON.stringify(
-            {
-                "name": name.value,
-                "image": image.value,
-                'votes': 0
-
-            }
-        ),
+        body: JSON.stringify(data),
     })
         .then(res => res.json())
-        .then(json => console.log(json))
+        .then(json => alert('Form submmitted successfully!'))
 }
 
