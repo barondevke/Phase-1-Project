@@ -79,17 +79,15 @@ function addVote(id, element) {
 
 }
 
+
+
 const form = document.querySelector('form')
 form.addEventListener('submit', (e) => {
     addLocation()
-
-
-
 })
 
 function addLocation() {
     let name = document.getElementById('name')
-    let place = document.getElementById('place')
     let image = document.getElementById('image')
 
     let data = {
