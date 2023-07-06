@@ -1,233 +1,252 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
- html,
- body {
-     margin: 0;
-     height: 100%;
-     width: 100%;
-     font-family: 'Montserrat', sans-serif;
- }
-
- .addMain {
-     background-image: url('./assets/william-white-TZCppMjaOHU-unsplash.jpg');
-     background-size: cover;
-     background-attachment: fixed;
-     height: 100%;
-     display: flex;
-     flex: 1;
- }
-
- footer {
-     text-align: center;
-     color: white;
-     background-color: black
- }
-
- .addBlock {
-     display: flex;
-     width: 20%;
-     height: 10%;
-     margin: 10% 5%;
-     background-color: #FFF;
-     padding: 4%;
-     align-items: center;
- }
-
- label {
-     display: inline-block;
-     width: 40%;
-     text-align: right;
-     font-size: 1.15rem;
- }
-
- .addLocation {
-     font-weight: bold;
-     text-align: center;
- }
-
-
- .indexLocation {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: white;
-     height: 50%;
-     background-image: url('./assets/raphael-schaller-zbUvPw1wUIw-unsplash\ 2.jpg');
- }
-
- .Locations {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
- }
-
- .locationImage {
-     height: 400px;
-     width: 400px;
-     border-radius: 5%;
- }
-
- .locationDiv {
-     margin: 2% 4%;
- }
-
- #submitBtn {
-     margin-left: 40%;
-     margin-top: 10%;
- }
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&display=swap');
 
 
 
- #menu {
-     background: #000000;
-     color: #FFF;
-     height: 5%;
-     padding-left: 18px;
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
 
- }
+.addMain {
+    background-image: url('./assets/william-white-TZCppMjaOHU-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    flex: 1;
+}
 
- #menu ul,
- #menu li {
-     margin: 0 auto;
-     padding: 0;
-     list-style: none
- }
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 3%;
+}
 
- #menu ul {
-     width: 100%;
- }
+.addBlock {
+    display: flex;
+    width: 20%;
+    height: 10%;
+    margin: 10% 5%;
+    background-color: #FFF;
+    padding: 4%;
+    align-items: center;
+}
 
- #menu li {
-     float: left;
-     display: inline;
-     position: relative;
- }
+label {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    font-size: 1.15rem;
+}
 
- #menu a {
-     display: block;
-     line-height: 45px;
-     padding: 0 14px;
-     text-decoration: none;
-     color: #FFFFFF;
-     font-size: 16px;
- }
+.addLocation {
+    font-weight: bold;
+    text-align: center;
+}
 
- #menu a.dropdown-arrow:after {
-     content: "\25BF";
-     margin-left: 5px;
- }
 
- #menu li a:hover {
-     color: #0099CC;
-     background: #F2F2F2;
- }
+.indexLocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 50%;
+    background-image: url('./assets/raphael-schaller-zbUvPw1wUIw-unsplash\ 2.jpg');
+}
 
- #menu input {
-     display: none;
-     margin: 0;
-     padding: 0;
-     height: 45px;
-     width: 100%;
-     opacity: 0;
-     cursor: pointer
- }
+.Locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
- #menu label {
-     display: none;
-     line-height: 45px;
-     text-align: center;
-     position: absolute;
-     left: 35px
- }
+.locationImage {
+    height: 300px;
+    width: 300px;
+    border-radius: 5%;
+}
 
- #menu label:before {
-     font-size: 1.6em;
-     content: "\2261";
-     margin-left: 20px;
- }
+.locationDiv {
+    margin: 2% 2%;
+}
 
- #menu ul.sub-menus {
-     height: auto;
-     overflow: hidden;
-     width: 170px;
-     background: #444444;
-     position: absolute;
-     z-index: 99;
-     display: none;
- }
+#submitBtn {
+    margin-left: 40%;
+    margin-top: 10%;
+}
 
- #menu ul.sub-menus li {
-     display: block;
-     width: 100%;
- }
+.about {
+    text-align: center;
+    height: 90%;
+}
 
- #menu ul.sub-menus a {
-     color: #FFFFFF;
-     font-size: 16px;
- }
+.logo {
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
 
- #menu li:hover ul.sub-menus {
-     display: block
- }
+}
 
- #menu ul.sub-menus a:hover {
-     background: #F2F2F2;
-     color: #444444;
- }
+.crown {
+    width: 2%;
+    height: 2%;
+    margin-top: 7%;
+    margin-left: 2%;
+}
 
- @media screen and (max-width: 800px) {
-     #menu {
-         position: relative
-     }
 
-     #menu ul {
-         background: #111;
-         position: absolute;
-         top: 100%;
-         right: 0;
-         left: 0;
-         z-index: 3;
-         height: auto;
-         display: none
-     }
+#menu {
+    background: #000000;
+    color: #FFF;
+    height: 5%;
+    padding-left: 18px;
 
-     #menu ul.sub-menus {
-         width: 100%;
-         position: static;
-     }
+}
 
-     #menu ul.sub-menus a {
-         padding-left: 30px;
-     }
+#menu ul,
+#menu li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none
+}
 
-     #menu li {
-         display: block;
-         float: none;
-         width: auto;
-     }
+#menu ul {
+    width: 100%;
+}
 
-     #menu input,
-     #menu label {
-         position: absolute;
-         top: 0;
-         left: 0;
-         display: block
-     }
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
 
-     #menu input {
-         z-index: 4
-     }
+#menu a {
+    display: block;
+    line-height: 45px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
 
-     #menu input:checked+label {
-         color: white
-     }
+#menu a.dropdown-arrow:after {
+    content: "\25BF";
+    margin-left: 5px;
+}
 
-     #menu input:checked+label:before {
-         content: "\00d7"
-     }
+#menu li a:hover {
+    color: #0099CC;
+    background: #F2F2F2;
+}
 
-     #menu input:checked~ul {
-         display: block
-     }
- }
+#menu input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer
+}
+
+#menu label {
+    display: none;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    left: 35px
+}
+
+#menu label:before {
+    font-size: 1.6em;
+    content: "\2261";
+    margin-left: 20px;
+}
+
+#menu ul.sub-menus {
+    height: auto;
+    overflow: hidden;
+    width: 170px;
+    background: #444444;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+#menu ul.sub-menus li {
+    display: block;
+    width: 100%;
+}
+
+#menu ul.sub-menus a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#menu li:hover ul.sub-menus {
+    display: block
+}
+
+#menu ul.sub-menus a:hover {
+    background: #F2F2F2;
+    color: #444444;
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        position: relative
+    }
+
+    #menu ul {
+        background: #111;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        height: auto;
+        display: none
+    }
+
+    #menu ul.sub-menus {
+        width: 100%;
+        position: static;
+    }
+
+    #menu ul.sub-menus a {
+        padding-left: 30px;
+    }
+
+    #menu li {
+        display: block;
+        float: none;
+        width: auto;
+    }
+
+    #menu input,
+    #menu label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block
+    }
+
+    #menu input {
+        z-index: 4
+    }
+
+    #menu input:checked+label {
+        color: white
+    }
+
+    #menu input:checked+label:before {
+        content: "\00d7"
+    }
+
+    #menu input:checked~ul {
+        display: block
+    }
+}
