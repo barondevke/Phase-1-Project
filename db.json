@@ -1,22 +1,22 @@
 {
-  "locations": [
-    {
-      "id": 1,
-      "name": "Wakora",
-      "image": "https://st2.depositphotos.com/1594308/8293/i/950/depositphotos_82938782-stock-photo-people-dancing-in-confetti.jpg",
-      "votes": 23
-    },
-    {
-      "id": 2,
-      "name": "Mazone",
-      "image": "https://img.freepik.com/premium-photo/digital-illustration-people-dace-floor_451583-47.jpg",
-      "votes": 6
-    },
-    {
-      "id": 3,
-      "name": "Maends",
-      "image": "https://st2.depositphotos.com/1594308/8293/i/950/depositphotos_82938782-stock-photo-people-dancing-in-confetti.jpg",
-      "votes": 18
-    }
-  ]
+    "locations": [
+        {
+            "id": 1,
+            "name": "Wakora",
+            "image": "https://st2.depositphotos.com/1594308/8293/i/950/depositphotos_82938782-stock-photo-people-dancing-in-confetti.jpg",
+            "votes": 23
+        },
+        {
+            "id": 2,
+            "name": "Mazone",
+            "image": "https://img.freepik.com/premium-photo/digital-illustration-people-dace-floor_451583-47.jpg",
+            "votes": 6
+        },
+        {
+            "id": 3,
+            "name": "Maends",
+            "image": "https://st2.depositphotos.com/1594308/8293/i/950/depositphotos_82938782-stock-photo-people-dancing-in-confetti.jpg",
+            "votes": 18
+        }
+    ]
 }

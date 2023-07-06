@@ -77,15 +77,35 @@ function addVote(id, element) {
 
         })
 
-
-
-
-
-
-
-
-
 }
 
 
+document.addEventListener('submit', () => {
+    addLocation()
+
+
+})
+
+function addLocation() {
+    let name = document.getElementById('name')
+    let place = document.getElementById('place')
+    let image = document.getElementById('image')
+    fetch('http://localhost:3000/locations', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            Accept: 'application/json'
+        },
+        body: JSON.stringify(
+            {
+                "name": name.value,
+                "image": image.value,
+                'votes': 0
+
+            }
+        ),
+    })
+        .then(res => res.json())
+        .then(json => console.log(json))
+}
 
