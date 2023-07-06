@@ -65,10 +65,11 @@
  .locationImage {
      height: 400px;
      width: 400px;
+     border-radius: 5%;
  }
 
  .locationDiv {
-     margin: 4% 4%;
+     margin: 2% 4%;
  }
 
 

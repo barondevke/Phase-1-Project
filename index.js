@@ -21,8 +21,14 @@ function rankData(data) {
         locationVotes.votes = element.votes
         locationVotes.innerHTML = `Votes : ${locationVotes.votes}`
 
+
+
+
         let voteBtn = document.createElement('button')
         voteBtn.innerText = 'Vote'
+        voteBtn.id = element.id
+        voteBtn.votes = element.votes
+        voteBtn.addEventListener('click', function () { addVote(voteBtn.id, locationVotes) })
         voteBtn.classList.add('voteBtn')
 
 
@@ -38,5 +44,48 @@ function rankData(data) {
     });
 
 }
+
+function addVote(id, element) {
+    let votes = 0
+    let newVotes = 0
+
+    fetch(`http://localhost:3000/locations/${id}`)
+        .then(response => response.json())
+        .then((data) => {
+            votes = data.votes
+            newVotes = votes + 1
+
+            fetch(`http://localhost:3000/locations/${id}`, {
+
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: 'application/json'
+                },
+                body: JSON.stringify(
+                    {
+                        "votes": newVotes
+                    }
+                )
+            })
+                .then(res => res.json())
+                .then(json => {
+                    element.innerText = `Votes: ${newVotes}`
+
+
+                })
+
+        })
+
+
+
+
+
+
+
+
+
+}
+
 
 
