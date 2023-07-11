@@ -1,4 +1,4 @@
-fetch('https://barondevke.github.io/Phase-1-Project/db.json')
+fetch(' http://localhost:3000/locations')
     .then(res => res.json())
     .then(json => rankData(json)
     )
@@ -49,13 +49,13 @@ function addVote(id, element) {
     let votes = 0
     let newVotes = 0
 
-    fetch(`http://localhost:3000/locations/${id}`)
+    fetch(` http://localhost:3000/locations${id}`)
         .then(response => response.json())
         .then((data) => {
             votes = data.votes
             newVotes = votes + 1
 
-            fetch(`http://localhost:3000/locations/${id}`, {
+            fetch(` http://localhost:3000/locations/${id}`, {
 
                 method: "PATCH",
                 headers: {
