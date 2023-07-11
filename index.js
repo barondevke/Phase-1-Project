@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/locations')
+fetch('https://barondevke.github.io/Phase-1-Project/db.json')
     .then(res => res.json())
     .then(json => rankData(json)
     )
