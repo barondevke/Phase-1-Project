@@ -1,4 +1,4 @@
-fetch(' http://localhost:3000/locations')
+fetch('https://sore-plum-centipede-boot.cyclic.app/locations')
     .then(res => res.json())
     .then(json => rankData(json)
     )
@@ -49,13 +49,13 @@ function addVote(id, element) {
     let votes = 0
     let newVotes = 0
 
-    fetch(` http://localhost:3000/locations${id}`)
+    fetch(`https://sore-plum-centipede-boot.cyclic.app/locations/${id}`)
         .then(response => response.json())
         .then((data) => {
             votes = data.votes
             newVotes = votes + 1
 
-            fetch(` http://localhost:3000/locations/${id}`, {
+            fetch(`https://sore-plum-centipede-boot.cyclic.app/locations/${id}`, {
 
                 method: "PATCH",
                 headers: {
@@ -95,7 +95,7 @@ function addLocation() {
         "image": image.value,
         'votes': 0
     }
-    fetch('http://localhost:3000/locations', {
+    fetch('https://sore-plum-centipede-boot.cyclic.app/locations', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
